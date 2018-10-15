@@ -1,7 +1,7 @@
 # Tomcat JMX
 
 
-#### Author:   Mohit Chawla 
+#### Author:   Mohit Chawla (Graduated GCAP 2016, GDAT and PDQW 2017)
 #### Created:  Saturday, October 06, 2018 
 #### Status:   Work in progress 
 

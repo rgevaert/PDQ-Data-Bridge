@@ -1,6 +1,6 @@
 # LAMP collectd
 
-#### Author:   Rudy Gevaert
+#### Author:   Rudy Gevaert (Graduated GCAP 2018)
 #### Created:  Monday, October 08, 2018 
 #### Status:   Work in progress 
 
