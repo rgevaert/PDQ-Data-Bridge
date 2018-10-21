@@ -1,0 +1,10 @@
+---
+version: 5
+defaults:
+  data_hash: yaml_data
+  datadir: /vagrant/data
+hierarchy:
+  - name: "Per-node data"
+    path: "%{hostname}.yaml"
+  - name: "Common values"
+    path: "common.yaml"

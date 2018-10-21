@@ -1,0 +1,28 @@
+---
+collectd::manage_repo: false
+collectd::purge: true
+collectd::recurse: true
+collectd::purge_config: true
+
+collectd::plugin::csv::datadir: '/collectd-data'
+collectd::plugin::csv::storerates: 'true'
+
+collectd::plugin::write_graphite::carbons:
+  collector:
+    graphitehost: '192.168.66.11'
+
+collectd::plugin::write_graphite::carbon_defaults:
+  graphiteport: 2003
+  separateinstances: true
+
+grafana::cfg:
+  app_mode: 'production'
+  auth.anonymous:
+    enabled: true
+    org_role: 'Admin'
+  database:
+    type: 'sqlite3'
+    host: '127.0.0.1:3306'
+    name: 'grafana'
+    user: 'root'
+    password: ''

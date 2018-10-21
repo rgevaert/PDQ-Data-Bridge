@@ -1,0 +1,17 @@
+---
+apache::default_vhost: false
+
+# For python-whisper that is needed by graphite-web to be
+# installed from backports
+apt::backports::pin: 500
+
+grafana::provisioning_datasources:
+  apiVersion: 1
+  datasources:
+    - name: 'Graphite'
+      type: 'graphite'
+      url: 'http://localhost:80'
+      isDefault: true
+      access: proxy
+      jsonData:
+        graphiteVersion: "1.0.x"
